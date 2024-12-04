@@ -78,6 +78,10 @@ app.post("/add-user", async (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.status(200).send("Hello");
+});
+
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
