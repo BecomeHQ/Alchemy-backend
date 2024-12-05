@@ -37,6 +37,7 @@ const generationConfig = {
 };
 
 app.post("/generate", async (req, res) => {
+  console.log("enetring generate");
   try {
     const userInput = req.body.input;
     if (!userInput) {
@@ -79,6 +80,7 @@ app.post("/add-user", async (req, res) => {
 });
 
 app.get("/", (req, res) => {
+  console.log("this is alchemy");
   res.status(200).send("Hello");
 });
 
